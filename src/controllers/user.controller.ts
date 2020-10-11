@@ -8,6 +8,10 @@ const userController = {
 
             if (!name || !email) return res.status(400).json({ message: "Missing data" });
 
+            const isUserExists = await User.findOne({ email }).exec();
+
+            if (isUserExists) return res.status(401).json({ message: "User Already Exists" })
+
             const newUser = await new User({
                 name,
                 email,
