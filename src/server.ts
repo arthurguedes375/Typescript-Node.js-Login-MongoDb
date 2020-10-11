@@ -15,6 +15,7 @@ import mongoose from 'mongoose';
 import mongoConfig from './config/mongo';
 mongoose.connect(mongoConfig.url, mongoConfig.configs);
 
+
 // Mids
 import cors from 'cors';
 import morgan from 'morgan';
