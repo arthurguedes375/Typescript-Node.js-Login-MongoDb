@@ -49,7 +49,12 @@ const userController = {
 
             if (!isPasswordValid) return res.status(401).json({ message: "Email or Password is Wrong!" })
 
-            return res.status(200).json(user);
+            return res.status(200).json({
+                _id: user._id,
+                name: user.name,
+                email: user.email,
+                access_token: user.access_token,
+            });
 
         } catch (err) {
             return res.status(500).json({ message: "Internal Server Error" })

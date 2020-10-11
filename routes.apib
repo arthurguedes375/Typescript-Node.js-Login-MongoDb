@@ -1,0 +1,75 @@
+FORMAT: 1B
+HOST: http://localhost:3333
+
+# Group Users
+
+
+## Users [/users]
+### Get all Users [GET]
++ Response 200 (application/json)
+    [
+        {
+            "_id": "5f8277f8be978514c6e07ed3",
+            "name": "Arthur Guedes",
+            "createdAt": "2020-10-11T03:11:52.987Z",
+            "updatedAt": "2020-10-11T03:11:52.987Z",
+            "__v": 0
+        },
+        {
+            "_id": "5f8279583c514c194e1a6649",
+            "name": "Arthur Guedes",
+            "createdAt": "2020-10-11T03:17:44.158Z",
+            "updatedAt": "2020-10-11T03:17:44.158Z",
+            "__v": 0
+        }
+    ]
+
+
+## User [/users/:id]
+### Get a specific Users by id [GET]
++ Response 200 (application/json)
+    {
+        "_id": "5f8277f8be978514c6e07ed3",
+        "name": "Arthur Guedes",
+        "createdAt": "2020-10-11T03:11:52.987Z",
+        "updatedAt": "2020-10-11T03:11:52.987Z",
+        "__v": 0
+    }
+
+
+## Create a User [/users]
+### Create a User [POST]
++ Response 200 (application/json)
+    {
+        "_id": "5f8277f8be978514c6e07ed3",
+        "name": "Arthur Guedes",
+        "createdAt": "2020-10-11T03:11:52.987Z",
+        "updatedAt": "2020-10-11T03:11:52.987Z",
+        "__v": 0
+    }
++ Request (application/json)
+    {
+        "name": "Arthur Guedes",
+        "email": "example@gmail.com",
+        "password": "12345678"
+    }
+
+
+
+# Group Session
+
+## Session [/session]
+### Create a Session [POST]
++ Response 200 (application/json)
+    {
+        "_id": "5f8279583c514c194e1a6649",
+        "name": "Arthur Guedes",
+        "email": "example@gmail.com",
+        "access_token": "e2fd6d0913a729ef18da5c7bb8c1f613c27c98f93ec983fdb0cd7df1b640"
+    }
+
++ Request (application/json)
+    {
+        "email": "example@gmail.com",
+        "password": "12345678"
+    }
