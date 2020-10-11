@@ -5,7 +5,8 @@
   "main": "src/server.ts",
   "scripts": {
     "predev": "clear",
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",

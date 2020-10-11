@@ -6,6 +6,7 @@ dotenv.config({ path: '.env' });
 const mongoOpts: ConnectionOptions = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
 };
 
 const mongoConfig = {
