@@ -24,7 +24,7 @@
 - Make a pull request
 
 ## :bulb: Tips
-- If you want to see the routes docs
+- If you are using the vscode and you want to see the routes docs
 - Press <kbd>CTRL+P</kbd>
 - Paste it: `ext install develiteio.api-blueprint-viewer` then press <kbd>Enter</kbd>
 - Go to the file: `routes.apib` and press on top-right on of these buttons will show you a preview
